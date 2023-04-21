@@ -24,6 +24,8 @@ module.exports = {
     'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
     'no-console': 'off',
     'import/extensions': 'off',
+    'import/first': 'off',
+    'import/order': 'off',
     'no-use-before-define': ['error', {
       'functions': false,
     }],

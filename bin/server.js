@@ -246,16 +246,16 @@ function filterClientOptions(inputOptions, clientToUseForMessage) {
 }
 
 // 定制
-import * as util from "util";
+import * as util from 'util';
 // index.html
-server.get("/", async (request, reply) => {
+server.get('/', async (request, reply) => {
     try {
         const readFile = util.promisify(fs.readFile);
-        const send = await readFile("./bin/html/index.html", "utf-8");
-        reply.raw.setHeader("content-type", "text/html; charset=utf-8");
+        const send = await readFile('./bin/html/index.html', 'utf-8');
+        reply.raw.setHeader('content-type', 'text/html; charset=utf-8');
         reply.send(send);
     } catch (err) {
-        console.log("Error", err);
+        console.log('Error', err);
     }
 });
-console.log("http://localhost:3000");
+console.log('http://localhost:3000');
